@@ -1,0 +1,78 @@
+doctype html
+html
+ head
+  title CoC
+  body
+   h1 First Page
+   a(href='/api/queryallcases')  View All Cases
+   
+   a(href='/api/createcase')  Insert  a new case
+   br
+   br
+   br
+   form(method='POST' action='/api/addcase')
+    label() CASE ID   
+    input(type='text', placeholder='Case ID' name='caseid')
+    br
+    br
+    label() CASE NAME 
+    input(type='text', placeholder='Case Name' name='caseName')
+    br
+    br
+    label() INVESTIGATOR NAME :  
+    input(type='text', placeholder='Investigator Name' name='investigatorName')
+    br
+    br
+    label() CRIME NAME :  
+    input(type='text', placeholder='Crime Name' name='crimeName')
+    br
+    br
+    label() INVESTIGATOR RANK :  
+    input(type='text', placeholder='Investigator Rank' name='investigatorRank')
+    br
+    br
+    label() POLICE STATION :  
+    input(type='text', placeholder='Police Station' name='policeStation')
+    br
+    br
+    label() CRIME NUMBER :  
+    input(type='text', placeholder='Crime Number' name='crimeNumber')
+    br
+    br
+    label() SEIZURE-MEMO NUMBER :  
+    input(type='text', placeholder='Seizure-memo Number' name='seizurememoNumber')
+    br
+    br
+    label() SEIZURE PLACE :  
+    input(type='text', placeholder='Seizure Place' name='seizurePlace')
+    br
+    br
+    label() SEIZURE DATE :  
+    input(type='text', placeholder='Seizure Date' name='seizureDate')
+    br
+    br
+    label() SEIZURE TIME :  
+    input(type='text', placeholder='Seizure Time' name='seizureTime')
+    br
+    br
+    label() SUSPECT NAME :  
+    input(type='text', placeholder='Suspect Name' name='suspectName')
+    br
+    br
+    label() SUSPECT ADDRESS  :  
+    input(type='text', placeholder='Suspect Address' name='suspectAddress')
+    br
+    br
+    label() WITNESS NAME :  
+    input(type='text', placeholder='Witness Name' name='witnessName')
+    br
+    br
+    label() CASE STATUS :  
+    input(type='text', placeholder='Case Status' name='caseStatus')
+    br
+    br
+    label() REPORT PATH :  
+    input(type='text', placeholder='Report Path' name='reportPath')
+    br
+    br
+    input(type='Submit' value='Submit')

@@ -1,0 +1,13 @@
+doctype html
+html
+ head
+  title CoC
+ body
+  h1 DETAILS OF ALL CASE
+ 
+   a(href='/api/queryallcases')  View All Cases
+   
+   a(href='/api/createcase')  Insert  a new case
+  ul
+   each item in list
+    li="CASEID:  " +item["Key"]+" INVESTIGATORNAME:  "  + item["Record"]["investigatorName"] + " CRIMENAME:  "  +item["Record"]["crimeName"]+ " INVESTIGATORRANK:  "  + item["Record"]["investigatorRank"] +" POLICE_STATION:  "  +item["Record"]["policeStation"] +" CRIME_NUMBER:  "  +item["Record"]["crimeNumber"] +" SEIZUREMEMO_NUMBER:  "  +item["Record"]["seizurememoNumber"] +" SEIZURE_PLACE:  "  +item["Record"]["seizurePlace"] +" SEIZURE_DATE:  "  +item["Record"]["seizureDate"] + " SEIZURE_TIME:  "  +item["Record"]["seizureTime"] +" SUSPECT_NAME:  "  +item["Record"]["suspectName"] +" SUSPECT_ADDRESS:  "  +item["Record"]["suspectAddress"] +" WITNESS_NAME:  "  +item["Record"]["witnessName"] +" CASE_STATUS:  "  +item["Record"]["caseStatus"] +" REPORT_PATH:  "  +item["Record"]["reportPath"]
